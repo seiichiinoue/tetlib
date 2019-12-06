@@ -4,13 +4,6 @@
 
 [WIP] this repository is for finding solution of tetris.
 
-## Development Progress
+## References
 
-- represent field with bits as like below,
-
-```text
-0100110000
-1110011000
-...
-0100100000
-```
+- [knewjade/solution-finder](https://github.com/knewjade/solution-finder)
