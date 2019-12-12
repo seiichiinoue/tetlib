@@ -2,7 +2,7 @@
 
 ## Description
 
-[WIP] this repository is for finding solution of tetris.
+[WIP] this repository is for solution finding in tetris.
 
 ## Envirionment
 
