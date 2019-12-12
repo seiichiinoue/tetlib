@@ -11,14 +11,14 @@ typedef long long ll;
 typedef pair<ll, ll> P;
 constexpr ll  MOD = (1e9+7);
 
+// field settings
 int h=20, w=10;
-vector<string> field(h);
-vector<ll> bit_field(w, (1ll << 20));
+// field : [h, w]
+vector<string> field(h, "0000000000");
+// bit_field : [w, h]
+vector<ll> bit_field(w, (1ll << h));
 
-void read_input() {
-    // initialization
-    rep(i, h) cin >> field[i];
-    // convert field as string-represent to bits-represent array
+void _synchronize_field() {
     rep(j, w) {
         rep(i, h) {
             // row_i == bits_i
@@ -28,10 +28,17 @@ void read_input() {
     }
     return;
 }
+void read_input() {
+    // initialization
+    rep(i, h) cin >> field[i];
+    // convert string-represent field to bits-represent field
+    _synchronize_field();
+    return;
+}
 void visualize_bit_field() {
     rep(i, h) {
         rep(j, w) {
-            (bit_field[j] >> i & 1) ? cout << "1" : cout << "0";
+            (bit_field[j] >> i & 1) ? cerr << "1" : cerr << "0";
         }
         cerr << endl;
     }
@@ -41,6 +48,6 @@ void visualize_bit_field() {
 int main() {
     read_input();
     visualize_bit_field();
-    // debug
     // rep(i, h) cerr << field[i] << endl;
+    return 0;
 }
