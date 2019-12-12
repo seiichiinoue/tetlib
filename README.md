@@ -4,6 +4,15 @@
 
 [WIP] this repository is for finding solution of tetris.
 
+## Envirionment
+
+- C++ 14+
+- gcc 9.2.0
+
+## Function
+
+- calculate probability of perfect clear
+
 ## References
 
 - [knewjade/solution-finder](https://github.com/knewjade/solution-finder)
