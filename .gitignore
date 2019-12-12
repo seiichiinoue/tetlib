@@ -1,7 +1,7 @@
 # ignore all
 *
 
-# ignore any
+# allow any
 !*/
 !/src/*
 !*.cpp
@@ -9,3 +9,6 @@
 !*.md
 !.gitignore
 !makefile
+
+# ignore
+**.out
